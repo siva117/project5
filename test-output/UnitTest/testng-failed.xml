@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [UnitTest]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Basic Flows1(failed)">
+    <parameter name="browser" value="edge"/>
+    <parameter name="env" value="QA"/>
+    <classes>
+      <class name="testNg.TestNgPract">
+        <methods>
+          <include name="tc1" invocation-numbers="0"/>
+          <include name="tc2" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testNg.TestNgPract -->
+    </classes>
+  </test> <!-- Basic Flows1(failed) -->
+</suite> <!-- Failed suite [UnitTest] -->
